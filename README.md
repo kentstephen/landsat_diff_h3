@@ -43,7 +43,7 @@ Free with registration. Better for users without AWS accounts.
 
 ## Usage
 
-Open `landsat_h3_evi_optimized.ipynb` in Jupyter or VS Code:
+Open `landsat_vegetation_change_h3.ipynb` in Jupyter or VS Code:
 
 ```bash
 uv run jupyter lab
