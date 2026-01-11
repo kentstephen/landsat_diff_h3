@@ -35,8 +35,7 @@ This project supports two STAC endpoints for Landsat data:
 
 ### Option 1: Element84 Earth Search (default)
 
-Free, no authentication required. Uses requester-pays S3 buckets.
-
+Uses requester-pays S3 buckets, requires auth from AWS.
 
 ```bash
 # Create .env file with your AWS credentials
@@ -47,7 +46,7 @@ AWS_SECRET_ACCESS_KEY=your_secret
 MAPBOX_TOKEN=your_mapbox_token
 ```
 
-It cost me about 25 cents to develop this using AWS and Element 84.
+It cost than 20 cents of compute to develop this using AWS and Element 84.
 
 ### Option 2: Microsoft Planetary Computer
 
