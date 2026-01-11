@@ -6,6 +6,9 @@ Compares EVI/NDVI between two time periods (e.g., 1990s vs 2020s) and outputs ch
 
 <img width="1244" height="533" alt="image" src="https://github.com/user-attachments/assets/68e72eff-9ebb-4b14-86cc-db841f99a54b" />
 
+<img width="1250" height="601" alt="Screenshot 2026-01-10 at 3 31 59 PM" src="https://github.com/user-attachments/assets/8b232464-16a1-41f5-aecd-ab0f43e74ee1" />
+
+
 ## Background
 
 **Case Study: Chernobyl Exclusion Zone**
