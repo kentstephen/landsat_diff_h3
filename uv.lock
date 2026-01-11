@@ -995,10 +995,12 @@ dependencies = [
     { name = "matplotlib" },
     { name = "mercantile" },
     { name = "odc-stac" },
+    { name = "osmnx" },
     { name = "palettable" },
     { name = "planetary-computer" },
     { name = "pystac" },
     { name = "pystac-client" },
+    { name = "python-dotenv" },
     { name = "rioxarray" },
     { name = "ruff" },
     { name = "ty" },
@@ -1017,10 +1019,12 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "mercantile", specifier = ">=1.2.1" },
     { name = "odc-stac", specifier = ">=0.5.0" },
+    { name = "osmnx", specifier = ">=2.0.7" },
     { name = "palettable", specifier = ">=3.3.3" },
     { name = "planetary-computer", specifier = ">=1.0.0" },
     { name = "pystac", specifier = ">=1.14.2" },
     { name = "pystac-client", specifier = ">=0.9.0" },
+    { name = "python-dotenv", specifier = ">=1.0.0" },
     { name = "rioxarray", specifier = ">=0.20.0" },
     { name = "ruff", specifier = ">=0.14.10" },
     { name = "ty", specifier = ">=0.0.9" },
@@ -1296,6 +1300,15 @@ wheels = [
 ]
 
 [[package]]
+name = "networkx"
+version = "3.6.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/6a/51/63fe664f3908c97be9d2e4f1158eb633317598cfa6e1fc14af5383f17512/networkx-3.6.1.tar.gz", hash = "sha256:26b7c357accc0c8cde558ad486283728b65b6a95d85ee1cd66bafab4c8168509", size = 2517025, upload-time = "2025-12-08T17:02:39.908Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl", hash = "sha256:d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762", size = 2068504, upload-time = "2025-12-08T17:02:38.159Z" },
+]
+
+[[package]]
 name = "numpy"
 version = "2.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1410,6 +1423,23 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/f8/79/2b9866a4686a54bcf959cc7ada51931a92478bf00717b19318aa3eb039d1/odc_stac-0.5.0.tar.gz", hash = "sha256:bee270811814a0e370881dc149b4d3709d2c46525316e192c6ecb1f452c6ad85", size = 116776, upload-time = "2025-12-10T23:22:34.569Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e2/c7/b8f2b3e53f26f8f463002f3e8023189653b627b22ba6c00ef86eaba50b73/odc_stac-0.5.0-py3-none-any.whl", hash = "sha256:02c3161242a8032d8d769c477d1668d563ef5c6e44617f3fdb273dfca1c20136", size = 43153, upload-time = "2025-12-10T23:22:32.361Z" },
+]
+
+[[package]]
+name = "osmnx"
+version = "2.0.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "geopandas" },
+    { name = "networkx" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "requests" },
+    { name = "shapely" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/11/65/b1f83d773371669fd53bfbe82d8d67880bcf907756c56be751dfffadb806/osmnx-2.0.7.tar.gz", hash = "sha256:a880ba6fdb288a821db73b6ca2a0c677538e0af7229b11759fbfa7fbb19be478", size = 87886, upload-time = "2025-11-26T04:07:54.082Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0e/a7/8606797abfd9a47cd11f26ca7d70b818d9e2f5346811d797efb3429b7603/osmnx-2.0.7-py3-none-any.whl", hash = "sha256:1aec19d3dc614279f36f4ead7b493adbc45f53bc99a43a76067a6f15c1fcac97", size = 101490, upload-time = "2025-11-26T04:07:52.856Z" },
 ]
 
 [[package]]

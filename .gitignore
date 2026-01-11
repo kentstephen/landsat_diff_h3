@@ -18,3 +18,12 @@ wheels/
 
 # Marimo
 __marimo__/
+
+.ipynb_checkpoints/
+cache/
+files/
+marimo_py_files/
+old_versions_jupyter/
+package-lock.json
+package.json
+

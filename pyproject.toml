@@ -24,4 +24,5 @@ dependencies = [
     "rioxarray>=0.20.0",
     "ruff>=0.14.10",
     "ty>=0.0.9",
+    "osmnx>=2.0.7",
 ]
