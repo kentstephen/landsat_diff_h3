@@ -4,6 +4,14 @@ Detect vegetation changes over time using Landsat imagery aggregated to H3 hexag
 
 Compares EVI/NDVI between two time periods (e.g., 1990s vs 2020s) and outputs change metrics per H3 cell.
 
+## Background
+
+**Case Study: Chernobyl Exclusion Zone**
+
+The 1986 Chernobyl disaster was catastrophic—the worst nuclear accident in history. Yet in the decades since evacuation, the Exclusion Zone has become an unintentional experiment in what happens when humans withdraw from a landscape. This notebook uses satellite imagery to examine one aspect of that story: vegetation change between the early 1990s and 2020s.
+
+Inspired by [Cal Flyn](https://www.calflyn.com/)'s *Islands of Abandonment*, which includes her trip to Chernobyl and Pripyat before the war.
+
 ## Setup
 
 ```bash
