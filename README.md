@@ -4,6 +4,8 @@ Detect vegetation changes over time using Landsat imagery aggregated to H3 hexag
 
 Compares EVI/NDVI between two time periods (e.g., 1990s vs 2020s) and outputs change metrics per H3 cell.
 
+<img width="1244" height="533" alt="image" src="https://github.com/user-attachments/assets/68e72eff-9ebb-4b14-86cc-db841f99a54b" />
+
 ## Background
 
 **Case Study: Chernobyl Exclusion Zone**
