@@ -10,7 +10,7 @@ Compares EVI/NDVI between two time periods (e.g., 1990s vs 2020s) and outputs ch
 
 The 1986 Chernobyl disaster was catastrophic—the worst nuclear accident in history. Yet in the decades since evacuation, the Exclusion Zone has become an unintentional experiment in what happens when humans withdraw from a landscape. This notebook uses satellite imagery to examine one aspect of that story: vegetation change between the early 1990s and 2020s.
 
-Inspired by [Cal Flyn](https://www.calflyn.com/)'s *Islands of Abandonment*, which includes her trip to Chernobyl and Pripyat before the war.
+Inspired by [Cal Flyn](https://www.calflyn.com/)'s *Islands of Abandonment*, which includes her trip to Chernobyl and Pripyat before the current conflict.
 
 ## Setup
 
@@ -32,6 +32,7 @@ This project supports two STAC endpoints for Landsat data:
 
 Free, no authentication required. Uses requester-pays S3 buckets.
 
+
 ```bash
 # Create .env file with your AWS credentials
 AWS_ACCESS_KEY_ID=your_key
@@ -41,20 +42,18 @@ AWS_SECRET_ACCESS_KEY=your_secret
 MAPBOX_TOKEN=your_mapbox_token
 ```
 
+It cost me about 25 cents to develop this using AWS and Element 84.
+
 ### Option 2: Microsoft Planetary Computer
 
-Free with registration. Better for users without AWS accounts.
-
-1. Sign up at [planetarycomputer.microsoft.com](https://planetarycomputer.microsoft.com)
-2. Get your API key
-3. Update the notebook to use Planetary Computer's STAC endpoint
+You can sign up but it is not necessary for this demo. AWS is more reliable. 
 
 ## Usage
 
 Open `landsat_vegetation_change_h3.ipynb` in Jupyter or VS Code:
 
 ```bash
-uv run jupyter lab
+uvx juv run landsat_vegetation_change_h3.ipynb
 ```
 
 ## How It Works
@@ -71,6 +70,5 @@ uv run jupyter lab
 - [`duckdb`](https://github.com/duckdb/duckdb) + [H3 extension](https://github.com/isaacbrodsky/h3-duckdb) - Fast spatial aggregation
 - [`h3`](https://github.com/uber/h3-py) - Uber's hexagonal grid system
 - [`lonboard`](https://github.com/developmentseed/lonboard) - GPU-accelerated map visualization
-- [`quackosm`](https://github.com/kraina-ai/quackosm) - OpenStreetMap PBF to GeoDataFrame via DuckDB
-- [`dask`](https://github.com/dask/dask) - Parallel computing with task scheduling
+- [`dask`](https://github.com/dask/dask) - Parallel array computing with task scheduling
 - [`pyarrow`](https://github.com/apache/arrow) - Apache Arrow for zero-copy data interchange
