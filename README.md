@@ -85,3 +85,5 @@ Which will run in Jupyter Lab
 - [`lonboard`](https://github.com/developmentseed/lonboard) - GPU-accelerated map visualization
 - [`dask`](https://github.com/dask/dask) - Parallel array computing with task scheduling
 - [`pyarrow`](https://github.com/apache/arrow) - Apache Arrow for zero-copy data interchange
+
+*This notebook is not meant to be conclusive science - just a means of exploration*
