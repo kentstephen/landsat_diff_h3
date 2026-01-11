@@ -65,9 +65,12 @@ uv run jupyter lab
 4. Aggregate to H3 hexagons using DuckDB's H3 extension
 5. Compare early vs recent periods to compute change
 
-## Dependencies
+## Core Dependencies
 
-- `odc-stac` - Cloud-native raster loading
-- `duckdb` + H3 extension - Fast spatial aggregation
-- `h3` - Uber's hexagonal grid system
-- `lonboard` - GPU-accelerated map visualization
+- [`odc-stac`](https://github.com/opendatacube/odc-stac) - Cloud-native raster loading
+- [`duckdb`](https://github.com/duckdb/duckdb) + [H3 extension](https://github.com/isaacbrodsky/h3-duckdb) - Fast spatial aggregation
+- [`h3`](https://github.com/uber/h3-py) - Uber's hexagonal grid system
+- [`lonboard`](https://github.com/developmentseed/lonboard) - GPU-accelerated map visualization
+- [`quackosm`](https://github.com/kraina-ai/quackosm) - OpenStreetMap PBF to GeoDataFrame via DuckDB
+- [`dask`](https://github.com/dask/dask) - Parallel computing with task scheduling
+- [`pyarrow`](https://github.com/apache/arrow) - Apache Arrow for zero-copy data interchange
