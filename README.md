@@ -16,6 +16,7 @@ Compares EVI (Enhanced Vegetation Index) and NDVI (Normalized Difference Vegetat
 The 1986 Chernobyl disaster was catastrophic—the worst nuclear accident in history. Yet in the decades since evacuation, the Exclusion Zone has become an unintentional experiment in what happens when humans withdraw from a landscape. This notebook uses satellite imagery to examine one aspect of that story: vegetation change between the early 1990s and 2020s.
 
 Inspired by [Cal Flyn](https://www.calflyn.com/)'s *Islands of Abandonment*, which includes her trip to Chernobyl and Pripyat before the Russian invasion.
+
 I think this type of tool could be useful for analysis of change over time and can be repurposed for different types of sensors and other spectral indices.
 
 ## Setup
@@ -39,9 +40,9 @@ uv sync
 
 This project supports two STAC endpoints for Landsat data:
 
-### Option 1: Element84 Earth Search (default)
+### Option 1: Element84 Earth Search
 
-Uses requester-pays S3 buckets, you will need to use new or exisitng AWS secrets. For purposes of accessing Landsat imagery in S3 this way, the IAM user defined for this purpose will only need `AmazonS3ReadOnlyAccess`
+Uses requester-pays S3 buckets. You will need to use new or existing AWS secrets. For purposes of accessing Landsat imagery in S3 this way, the IAM user defined for this purpose will only need `AmazonS3ReadOnlyAccess`.
 
 ```bash
 # Create .env file with your AWS credentials
@@ -52,11 +53,11 @@ AWS_SECRET_ACCESS_KEY=your_secret
 MAPBOX_TOKEN=your_mapbox_token
 ```
 
-It cost less than 20 cents of compute to develop this using AWS and Element 84.
+It cost me less than 20 cents of compute to develop this example using AWS/Element84.
 
 ### Option 2: Microsoft Planetary Computer
 
-You can sign up but it is not necessary for this demo. AWS is more reliable. 
+This notebook uses `sign_inplace` so no extra credentials are needed. However, AWS/Element84 is generally more reliable. 
 
 ## Usage
 
