@@ -19,6 +19,9 @@ wheels/
 # Marimo
 __marimo__/
 
+# Claude Code
+CLAUDE.md
+
 .ipynb_checkpoints/
 cache/
 files/
