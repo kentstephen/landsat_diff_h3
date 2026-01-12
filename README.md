@@ -19,20 +19,24 @@ Inspired by [Cal Flyn](https://www.calflyn.com/)'s *Islands of Abandonment*, whi
 
 I think this type of tool could be useful for analysis of change over time and can be repurposed for different types of sensors and other spectral indices.
 
-## Setup
+## Setup & Usage
 
-[Astral Docs for uv](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_1)
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and clone the repo:
 
 ```bash
-# Install uv if you haven't
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Or using homebrew with macOS
-brew install uv
-
-# Clone
+curl -LsSf https://astral.sh/uv/install.sh | sh  # or: brew install uv
 git clone https://github.com/kentstephen/landsat_diff_h3.git
 cd landsat_diff_h3
+```
+
+**Option A: One-liner with juv** - runs notebook with inline dependencies (PEP 723):
+```bash
+uvx juv run landsat_vegetation_change_h3.ipynb
+```
+
+**Option B: Install to venv** - use `uv sync` then open notebook in your IDE:
+```bash
+uv sync
 ```
 
 ## Data Sources
@@ -57,16 +61,6 @@ It cost me less than 20 cents of compute to develop this example using AWS/Eleme
 ### Option 2: Microsoft Planetary Computer
 
 This notebook uses `sign_inplace` so no extra credentials are needed. However, AWS/Element84 is generally more reliable. 
-
-## Usage
-
-Open `landsat_vegetation_change_h3.ipynb` in Jupyter or your preferred IDE:
-
-Example to run in Jupyter Lab: 
-```bash
-uvx juv run landsat_vegetation_change_h3.ipynb
-```
-
 
 ## How It Works
 
