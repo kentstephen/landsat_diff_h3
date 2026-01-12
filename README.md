@@ -21,7 +21,7 @@ I think this type of tool could be useful for analysis of change over time and c
 
 ## Setup
 
-[Astral Docs for `uv`](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_1)
+[Astral Docs for uv](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_1)
 
 ```bash
 # Install uv if you haven't
