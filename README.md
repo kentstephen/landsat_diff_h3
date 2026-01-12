@@ -25,8 +25,8 @@ Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and clone 
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh  # or: brew install uv
-git clone https://github.com/kentstephen/landsat_diff_h3.git
-cd landsat_diff_h3
+git clone https://github.com/kentstephen/landsat_change_detection.git
+cd landsat_change_detection
 ```
 
 **Option A: One-liner with juv** - runs notebook with inline dependencies (PEP 723):
