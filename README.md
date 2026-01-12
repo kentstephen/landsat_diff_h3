@@ -26,8 +26,7 @@ I think this type of tool could be useful for analysis of change over time and c
 # Install uv if you haven't
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# or for mac
-
+# Or using homebrew with macOS
 brew install uv
 
 # Clone and install
