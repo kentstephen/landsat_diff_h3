@@ -30,10 +30,9 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 # Or using homebrew with macOS
 brew install uv
 
-# Clone and install
+# Clone
 git clone https://github.com/kentstephen/landsat_diff_h3.git
 cd landsat_diff_h3
-uv sync
 ```
 
 ## Data Sources
