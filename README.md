@@ -16,12 +16,11 @@ Compares EVI (Enhanced Vegetation Index) and NDVI (Normalized Difference Vegetat
 The 1986 Chernobyl disaster was catastrophic—the worst nuclear accident in history. Yet in the decades since evacuation, the Exclusion Zone has become an unintentional experiment in what happens when humans withdraw from a landscape. This notebook uses satellite imagery to examine one aspect of that story: vegetation change between the early 1990s and 2020s.
 
 Inspired by [Cal Flyn](https://www.calflyn.com/)'s *Islands of Abandonment*, which includes her trip to Chernobyl and Pripyat before the Russian invasion.
-
-I think this type of tool could be useful for analysis of  change over time and can be repurposed for differnet types of sensors and other spectral indices.
+I think this type of tool could be useful for analysis of change over time and can be repurposed for different types of sensors and other spectral indices.
 
 ## Setup
 
-[Astral Docs for `uv`)](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_1)
+[Astral Docs for `uv`](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_1)
 
 ```bash
 # Install uv if you haven't
@@ -62,12 +61,13 @@ You can sign up but it is not necessary for this demo. AWS is more reliable.
 
 ## Usage
 
-Open `landsat_vegetation_change_h3.ipynb` in Jupyter or VS Code:
+Open `landsat_vegetation_change_h3.ipynb` in Jupyter or your preferred IDE:
 
+Example to run in Jupyter Lab: 
 ```bash
 uvx juv run landsat_vegetation_change_h3.ipynb
 ```
-Which will run in Jupyter Lab
+
 
 ## How It Works
 
